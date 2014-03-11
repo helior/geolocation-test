@@ -85,7 +85,7 @@
                                     <!--esi
                                     <esi:choose>
                                         <esi:when test="$(GEO{'lat'}) & $(GEO{'lat'})">
-                                            $(GEO{'lat'}), $(GEO{'long'})
+                                            <ese:vars>$(GEO{'lat'}), $(GEO{'long'})</esi:vars>
                                         </esi:when>
                                     </esi:choose>
                                     -->
@@ -95,7 +95,7 @@
                                     <!--esi
                                     <esi:choose>
                                         <esi:when test="$(GEO{'zip'})">
-                                            $(GEO{'zip'})
+                                            <esi:vars>$(GEO{'zip'})</esi:vars>
                                         </esi:when>
                                     </esi:choose>
                                     -->
