@@ -1,4 +1,10 @@
 <?php
+
+    /**
+     * Set cache-control headers.
+     */
+    header("Cache-Control: max-age=3600"); // 1 hour (60sec * 60min)
+
     /**
      * Copy+pasta from http://roshanbh.com.np/2007/12/getting-real-ip-address-in-php.html
      */
