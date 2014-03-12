@@ -126,7 +126,7 @@
                                     <!--esi
                                     <esi:choose>
                                         <esi:when test="$(GEO{'timezone'})">
-                                            <esi:vars name="$(GEO{'timezone'})" />
+                                            <esi:vars>$(GEO{'timezone'})</esi:vars>
                                         </esi:when>
                                     </esi:choose>
                                     -->
