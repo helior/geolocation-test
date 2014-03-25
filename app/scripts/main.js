@@ -27,9 +27,14 @@
 
 	var tz = jstz.determine();
 	element.html(tz.name());
-	// date = new Date();
-	// currentTimeZoneOffsetInHours = date.getTimezoneOffset();
 
-	// element.html(currentTimeZoneOffsetInHours + ":00");
+	var main = main || {};
+
+	<esi:choose>
+		<esi:when test="$(GEO{'zip'})">
+    		main.zip = <esi:vars>$(GEO{'zip'})</esi:vars>;
+        </esi:when>
+    </esi:choose>
+
 
 })(jQuery);
